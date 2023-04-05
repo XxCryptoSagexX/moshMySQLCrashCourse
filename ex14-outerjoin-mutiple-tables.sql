@@ -15,8 +15,6 @@ LEFT JOIN order_statuses os
 	ON o.status = os.order_status_id
 ORDER by o.status
 
-
-
 /* 
     Best practices to try and not use RIGHT JOIN but to continue to use left joins. 
 */
