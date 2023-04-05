@@ -1,0 +1,10 @@
+SELECT * 
+FROM
+WHERE
+
+
+/* 
+    Notes:
+
+    •
+*/
