@@ -20,6 +20,7 @@ JOIN employees m
 -- Similar to joining across different databases but must have different alias names.
 -- In this example you are showcasing the employee IDs with their first name and the name of their Manager.
 
+------------------------------------------------------------------------
 /* Joining Multiple Tables */
 USE sql_store;
 SELECT 
@@ -40,6 +41,7 @@ JOIN order_statuses os
     •
 */
 
+------------------------------------------------------------------------
 /* Compound Join Conditions */
 SELECT * 
 FROM order_items oi
@@ -52,8 +54,8 @@ JOIN order_item_notes oin
     • This denotes that you are joining two tables at two coloums instead of specifically one in previous iterations. In a way its like two coloums make 1 record.
 */
 
+------------------------------------------------------------------------
 /* Implicit Join Syntax */
-
 -- The normal way of making an Inner Join
 SELECT * 
 FROM orders o
@@ -64,3 +66,20 @@ JOIN customers c
 SELECT * 
 FROM orders o, customers c
 WHERE o.customer_id = c.customer_id
+
+------------------------------------------------------------------------
+/* Natural JOIN */
+SELECT *
+FROM order o
+NATURAL JOIN customers c
+
+SELECT
+	o.order_id,
+    c.first_name
+FROM orders o
+NATURAL JOIN customers c
+/* 
+    Notes:
+
+    • Will join based on common coloms as oppose to explict joins using the ON clause. This is effectively allowing the system to join them. 
+*/

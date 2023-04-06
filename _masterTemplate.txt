@@ -1,6 +1,16 @@
+SQL Lesson Update: 24 of 40 Completed
+
+/* 
+    Excercise #: 
+    DB: 
+    Objective: 
+*/
 SELECT * 
 FROM
-WHERE
+
+
+------------------------------------------------------------------------
+
 
 
 /* 
@@ -8,3 +18,4 @@ WHERE
 
     •
 */
+
