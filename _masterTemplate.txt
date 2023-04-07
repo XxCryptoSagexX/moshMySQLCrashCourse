@@ -1,4 +1,4 @@
-SQL Lesson Update: 24 of 40 Completed
+SQL Lesson Update: 40 of 40 Completed
 
 /* 
     Excercise #: 
